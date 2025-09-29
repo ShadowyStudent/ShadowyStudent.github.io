@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Carrito - Librería del Umbral</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script defer src="js/script.js"></script>
+</head>
+<body>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="registro.html">Registro</a></li>
+      <li><a href="quienes-somos.html">Quiénes somos</a></li>
+      <li><a href="catalogo.html">Catálogo</a></li>
+      <li><a href="carrito.html">Carrito</a></li>
+      <li><a href="busqueda.html">Búsqueda</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h1>Tu selección de libros malditos</h1>
+
+    <div class="carrito-container">
+      <table id="tabla-carrito">
+        <thead>
+          <tr>
+            <th>Imagen</th>
+            <th>Libro</th>
+            <th>Cantidad</th>
+            <th>Precio unitario</th>
+            <th>Subtotal</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><img src="img/libro1.jpg" alt="El códice del abismo" width="60"></td>
+            <td>El códice del abismo</td>
+            <td><input type="number" value="1" min="0" class="cantidad"></td>
+            <td class="precio">199</td>
+            <td class="subtotal">199</td>
+          </tr>
+          <tr>
+            <td><img src="img/libro4.jpg" alt="El Evangelio de las Sombras" width="60"></td>
+            <td>El Evangelio de las Sombras</td>
+            <td><input type="number" value="2" min="0" class="cantidad"></td>
+            <td class="precio">229</td>
+            <td class="subtotal">458</td>
+          </tr>
+          <tr>
+            <td><img src="img/libro6.jpg" alt="La Máquina que Soñaba con Dios" width="60"></td>
+            <td>La Máquina que Soñaba con Dios</td>
+            <td><input type="number" value="1" min="0" class="cantidad"></td>
+            <td class="precio">259</td>
+            <td class="subtotal">259</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="total-box">
+        <h2>Total: $<span id="total">0</span> MXN</h2>
+        <button id="btn-pagar">Pagar</button>
+      </div>
+    </div>
+  </main>
+
+</body>
+</html>
